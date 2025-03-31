@@ -1,0 +1,32 @@
+[workspace]
+resolver = "2"
+members  = [
+    "embassy-zynq-7000",
+    "embassy-zynq-usplus",
+
+    # Example
+    "examples/artyZ7-20",
+]
+
+[workspace.package]
+edition    = "2024"
+authors    = [
+	"aki-nyan <aki@lethalbit.net>"
+]
+license    = "BSD-3-Clause"
+categories = [
+    "embedded", "hardware-support", "no-std", "asynchronous"
+]
+repository = "https://github.com/lethalbit/embassy-zynq"
+
+[workspace.dependencies]
+embassy-time         = "0.4.0"
+embassy-time-driver  = "0.2.0"
+embassy-futures      = "0.1.1"
+embassy-sync         = "0.6.2"
+embassy-embedded-hal = "0.3.0"
+embedded-hal         = "1.0.0"
+embedded-hal-async   = "1.0.0"
+embedded-io          = "0.6.1"
+embedded-io-async    = "0.6.1"
+cortex-ar            = "0.1.0"

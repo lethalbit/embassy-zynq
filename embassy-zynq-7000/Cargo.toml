@@ -1,0 +1,31 @@
+[package]
+name                 = "embassy-zynq-7000"
+description          = "Embassy Hardware Abstraction Layer (HAL) for AMD Zynq™ 7000 devices"
+readme               = "README.md"
+version              = "0.1.0"
+keywords             = [
+	"embedded", "async", "embedded-hal", "zynq", "zynq-7000",
+]
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+categories.workspace = true
+repository.workspace = true
+
+[features]
+default = ["dual-core"]
+
+dual-core   = []
+single-core = []
+
+[dependencies]
+embassy-time.workspace         = true
+embassy-time-driver.workspace  = true
+embassy-futures.workspace      = true
+embassy-sync.workspace         = true
+embassy-embedded-hal.workspace = true
+embedded-hal.workspace         = true
+embedded-hal-async.workspace   = true
+embedded-io.workspace          = true
+embedded-io-async.workspace    = true
+cortex-ar.workspace            = true

@@ -1,0 +1,12 @@
+[package]
+edition = "2024"
+name    = "artyZ7-20"
+version = "0.1.0"
+license = "BSD-3-Clause"
+
+[dependencies]
+embassy-executor = { version = "0.7.0" }
+embassy-time     = "0.4.0"
+
+embassy-zynq-7000 = {  version = "0.1.0", path = "../../embassy-zynq-7000" }
+cortex-ar         = "0.1.0"

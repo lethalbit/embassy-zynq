@@ -1,0 +1,6 @@
+rustflags = [
+  "-Ctarget-cpu=cortex-a9",
+]
+
+[build]
+target = "armv7a-none-eabi"
